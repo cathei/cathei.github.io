@@ -6,8 +6,9 @@
   <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
-.hover-overlay:hover {
-  background-color: #4e9525
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
 }
   </style>
 </head>
@@ -20,16 +21,18 @@
         <p class="lead mb-4">We're making some fun games! Checkout these!</p>
       </div>
 
-      <div class="col-6 p-align-items-center p-3 rounded-3 border shadow d-inline-flex">
-        <!-- <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"> -->
-        <div>
-          <!-- <button type="button" class="btn btn-lg px-4">
-          </button> -->
-          <img class="rounded-3" src="./img/gravity-kitty.jpg" alt="" width="128" height="128">
-        </div>
-        <div class="ms-3 text-start">
-          <h3>Gravity Kitty</h3>
-          <p class="lead">Run through the obstacles with gravity-controlling animal friends!</p>
+      <div class="card rounded-3 border shadow d-inline-flex">
+        <div class="card-horizontal">
+          <!-- <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"> -->
+          <img src="./img/gravity-kitty.jpg" alt="" width="128" height="128">
+          <div class="card-body rounded-3 text-start">
+            <!-- <button type="button" class="btn btn-lg px-4">
+            </button> -->
+            <h3 class="card-title">Gravity Kitty</h3>
+            <p class="card-text">Run through the obstacles with gravity-controlling animal friends!</p>
+            <!-- <button class="btn btn-primary">Google Play</button>
+            <button class="btn btn-primary">App Store</button> -->
+          </div>
         </div>
       </div>
     </div>
