@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>CoffCook.</title>
   <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -15,30 +18,34 @@
 
 <body>
   <main>
-    <div class="container text-center">
-      <div class="px-4 py-3 my-2">
-        <img class="d-block mx-auto mb-4" src="./img/logo.png" alt="" width="256" height="256">
-        <p class="lead mb-4">We're making some fun games! Checkout these!</p>
+    <div class="container justify-content-center">
+      <div class="row text-center justify-content-center">
+        <div class="col-8 col-md-6 px-4 py-3 my-2">
+          <img class="d-block mx-auto mb-4 img-fluid" src="./img/coffcook.png" alt="">
+          <p class="lead mb-4">We're making some fun games! Check these out!</p>
+        </div>
       </div>
-
-      <div class="card rounded-3 border shadow d-inline-flex">
-        <div class="card-horizontal">
-          <!-- <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"> -->
-          <img src="./img/gravity-kitty.jpg" alt="" width="128" height="128">
-          <div class="card-body rounded-3 text-start">
-            <!-- <button type="button" class="btn btn-lg px-4">
-            </button> -->
+      <div class="row justify-content-center">
+        <div class="col-8 col-md-6 card p-0 rounded-3 border shadow">
+          <img class="card-img-top p-0" src="./img/gravity-kitty.jpg" alt="">
+          <div class="card-body text-center">
             <h3 class="card-title">Gravity Kitty</h3>
             <p class="card-text">Run through the obstacles with gravity-controlling animal friends!</p>
-            <!-- <button class="btn btn-primary">Google Play</button>
-            <button class="btn btn-primary">App Store</button> -->
+            <div class="row justify-content-center">
+              <a class="col-8 col-sm d-flex p-1" href="https://play.google.com/store/apps/details?id=com.cathei.gravitykitty">
+                <img class="img-fluid" src="./img/google-play-badge.png">
+              </a>
+              <a class="col-8 col-sm d-flex p-1" href="https://apps.apple.com/app/id1587113443">
+                <img class="img-fluid" src="./img/app-store-badge.png">
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </main>
 
-  <footer class="py-5 my-5 text-center">
+  <footer class="py-5 text-center">
     <ul class="nav justify-content-center border-bottom pb-2">
       <li class="nav-item"><a href="./privacy-policy.html" class="nav-link px-2 text-muted">Privacy Policy</a></li>
       <li class="nav-item"><a href="mailto:coffcook@gmail.com" class="nav-link px-2 text-muted">Contact Us</a></li>
