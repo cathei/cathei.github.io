@@ -1,14 +1,13 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Title from './components/Title.vue'
 import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+    <img class="logo" src="./assets/coffcook.png" width="125" height="125" />
+      <Title name="Maxwell K. Kang" desc="Senior Game Developer, Open Source Author, and a Gamer." />
     </div>
   </header>
 
@@ -19,29 +18,19 @@ import TheWelcome from './components/TheWelcome.vue'
 
 <style scoped>
 header {
-  line-height: 1.5;
+  line-height: 1.3;
+  margin: 2rem;
 }
 
 .logo {
   display: block;
-  margin: 0 auto 2rem;
+  margin: 0 2rem 0 0;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.wrapper {
+  display: flex;
+  place-items: center;
+  justify-content: center;
 }
+
 </style>
