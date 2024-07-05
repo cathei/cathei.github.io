@@ -1,8 +1,8 @@
 <template>
   <div class="widgets">
     <div class="widget-image">
-      <a href="https://github.com/cathei">
-        <img src="https://github-readme-stats.vercel.app/api?username=cathei&theme=vue-dark&hide=contribs&hide_rank=true&show_icons=true"/>
+      <a target="_blank" href="https://github.com/cathei">
+        <img class="widget-gh" src="https://github-readme-stats.vercel.app/api?username=cathei&theme=vue-dark&hide=contribs&hide_rank=true&show_icons=true"/>
       </a>
     </div>
     <div class="widget-text">
@@ -16,8 +16,19 @@
 </template>
 
 <style scoped>
+.widget-gh {
+  object-fit: contain;
+}
+
 .widget-coffee {
   display: block;
   margin-top: 1rem;
+}
+
+@media (max-width: 900px) {
+  .widget-gh {
+    width: 100%;
+    height: 100%;
+  }
 }
 </style>

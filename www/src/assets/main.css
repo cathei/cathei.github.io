@@ -35,6 +35,10 @@ p {
 }
 
 @media (max-width: 900px) {
+  #app {
+    padding: 1rem
+  }
+
   .widgets {
     display: block;
   }
