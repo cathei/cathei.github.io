@@ -30,9 +30,11 @@ export default {
 
 <template>
   <div class="widgets">
-    <iframe id="linkedin-profile" frameborder="0" scrolling="no" allowfullscreen></iframe>
-    <div class="text">
-      <h3>Versatile Game Programmer</h3>
+    <div class="widget-image">
+      <iframe id="linkedin-profile" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    </div>
+    <div class="widget-text">
+      <h2>Versatile Game Programmer</h2>
       <p>I've been professionally working for game industry since 2013. I can play any role in gamedev, from scratch to launch. This includes gameplay, rendering, networking, testing, platform integration and optimization!</p>
     </div>
   </div>
@@ -44,10 +46,6 @@ export default {
   display: block;
   width: 301px;
   height: 262px;
-}
-
-.text {
-  margin-left: 20px
 }
 
 </style>

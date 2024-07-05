@@ -4,9 +4,13 @@ import ProfileTitle from './components/ProfileTitle.vue'
 
 <template>
   <header>
-    <div class="wrapper">
-      <img class="logo" src="./assets/coffcook.png" width="125" height="125" />
-      <div>
+    <div class="widgets">
+      <div class="widget-image">
+        <a href="/">
+          <img class="logo" src="./assets/coffcook.png" width="125" height="125" />
+        </a>
+      </div>
+      <div class="widget-text">
         <ProfileTitle name="Maxwell K. Kang" desc="Senior Game Developer, Open Source Author, and a Gamer." />
         <nav>
           <RouterLink to="/">About</RouterLink> |
@@ -19,8 +23,11 @@ import ProfileTitle from './components/ProfileTitle.vue'
   </header>
 
   <main>
-    <hr /><br />
-    <RouterView />
+    <hr />
+    <br />
+    <div class="view">
+      <RouterView />
+    </div>
   </main>
 </template>
 
@@ -30,19 +37,19 @@ header {
   margin: 2rem;
 }
 
-.logo {
-  display: block;
-  margin: 0 2rem 0 0;
-}
-
-.wrapper {
-  display: flex;
-  place-items: center;
-  justify-content: center;
-}
-
 nav {
   margin: 1rem 0 0 0;
 }
 
+@media (max-width: 900px) {
+  header {
+    margin: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .view  {
+    margin-left: 1.1rem;
+    margin-right: 1.1rem;
+  }
+}
 </style>

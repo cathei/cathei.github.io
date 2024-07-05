@@ -25,3 +25,26 @@ a,
   display: flex;
   justify-content: center;
 }
+
+.widget-text {
+  margin-left: 20px;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .widgets {
+    display: block;
+  }
+
+  .widget-image {
+    display: flex;
+    justify-content: center;
+  } 
+
+  .widget-text {
+    margin: 20px 0 0 0;
+  }
+}

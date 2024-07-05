@@ -10,23 +10,23 @@ import ImgPepper from '@/assets/cats/pepper.jpg'
 <template>
   <div class="gallary">
     <CatsItem :image="ImgTang">
-      <h3>Tang</h3>
+      <h2>Tang</h2>
       The oldest of all and she is after blood!
     </CatsItem>
     <CatsItem :image="ImgCoffee">
-      <h3>Coffee</h3>
+      <h2>Coffee</h2>
       The owl-looking cat, wakes you up by biting your softest part.
     </CatsItem>
     <CatsItem :image="ImgCookie">
-      <h3>Cookie</h3>
+      <h2>Cookie</h2>
       The smart white cat who loves belly rub! Good at fetching ball.
     </CatsItem>
     <CatsItem :image="ImgAnchovy">
-      <h3>Anchovy</h3>
+      <h2>Anchovy</h2>
       Scardie cat who hides very quick. But his fur is so soft!
     </CatsItem>
     <CatsItem :image="ImgPepper">
-      <h3>Pepper</h3>
+      <h2>Pepper</h2>
       Cat that purrs alot and craves attention. Always a baby.
     </CatsItem>
   </div>

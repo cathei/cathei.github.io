@@ -9,8 +9,10 @@ defineProps({
 
 <template>
   <div class="widgets">
-    <img class="cat" :src="image"/>
-    <div class="text">
+    <div class="widget-image">
+      <img class="cat" :src="image"/>
+    </div>
+    <div class="widget-text">
       <slot></slot>
     </div>
   </div>
@@ -19,15 +21,24 @@ defineProps({
 <style scoped>
 .widgets {
   justify-content: left;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .cat {
   width: 640px;
   height: 480px;
+  object-fit: contain
 }
 
-.text {
-  margin-left: 20px;
+@media (max-width: 900px) {
+  .cat {
+    width: 100%;
+    height: 100%;
+  }
+
+  .widgets {
+    margin-bottom: 2rem;
+  }
 }
+
 </style>
