@@ -1,18 +1,18 @@
 <script setup>
-import Title from './components/Title.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import ProfileTitle from './components/ProfileTitle.vue'
+import ProfileBody from './components/ProfileBody.vue'
 </script>
 
 <template>
   <header>
     <div class="wrapper">
-    <img class="logo" src="./assets/coffcook.png" width="125" height="125" />
-      <Title name="Maxwell K. Kang" desc="Senior Game Developer, Open Source Author, and a Gamer." />
+      <img class="logo" src="./assets/coffcook.png" width="125" height="125" />
+      <ProfileTitle name="Maxwell K. Kang" desc="Senior Game Developer, Open Source Author, and a Gamer." />
     </div>
   </header>
 
   <main>
-    <TheWelcome />
+    <ProfileBody />
   </main>
 </template>
 
