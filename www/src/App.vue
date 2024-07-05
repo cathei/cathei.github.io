@@ -1,18 +1,25 @@
 <script setup>
 import ProfileTitle from './components/ProfileTitle.vue'
-import ProfileBody from './components/ProfileBody.vue'
 </script>
 
 <template>
   <header>
     <div class="wrapper">
       <img class="logo" src="./assets/coffcook.png" width="125" height="125" />
-      <ProfileTitle name="Maxwell K. Kang" desc="Senior Game Developer, Open Source Author, and a Gamer." />
+      <div>
+        <ProfileTitle name="Maxwell K. Kang" desc="Senior Game Developer, Open Source Author, and a Gamer." />
+        <nav>
+          <RouterLink to="/">About</RouterLink> |
+          <RouterLink to="/work">Work</RouterLink> |
+          <RouterLink to="/games">Games</RouterLink>
+        </nav>
+      </div>
     </div>
   </header>
 
   <main>
-    <ProfileBody />
+    <hr /><br />
+    <RouterView />
   </main>
 </template>
 
@@ -31,6 +38,10 @@ header {
   display: flex;
   place-items: center;
   justify-content: center;
+}
+
+nav {
+  margin: 1rem 0 0 0;
 }
 
 </style>
