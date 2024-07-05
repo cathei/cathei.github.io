@@ -11,7 +11,8 @@ import ProfileTitle from './components/ProfileTitle.vue'
         <nav>
           <RouterLink to="/">About</RouterLink> |
           <RouterLink to="/work">Work</RouterLink> |
-          <RouterLink to="/games">Games</RouterLink>
+          <RouterLink to="/games">Games</RouterLink> |
+          <RouterLink to="/cats">Cats</RouterLink>
         </nav>
       </div>
     </div>

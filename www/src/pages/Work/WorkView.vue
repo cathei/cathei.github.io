@@ -24,7 +24,6 @@ export default {
     linkedInScript.src = 'https://badges.linkedin.com/profile?version=v1&locale=en_US&badgetype=VERTICAL&badgetheme=dark&maxsize=large&trk=profile-badge&vanityname=cathei&uid=0'
 
     document.head.appendChild(linkedInScript)
-
   }
 }
 </script>
@@ -33,7 +32,8 @@ export default {
   <div class="widgets">
     <iframe id="linkedin-profile" frameborder="0" scrolling="no" allowfullscreen></iframe>
     <div class="text">
-      
+      <h3>Versatile Game Programmer</h3>
+      <p>I've been professionally working for game industry since 2013. I can play any role in gamedev, from scratch to launch. This includes gameplay, rendering, networking, testing, platform integration and optimization!</p>
     </div>
   </div>
 </template>
@@ -42,9 +42,12 @@ export default {
 
 #linkedin-profile {
   display: block;
-  width: 300px;
-  height: 261px;
+  width: 301px;
+  height: 262px;
 }
 
+.text {
+  margin-left: 20px
+}
 
 </style>
