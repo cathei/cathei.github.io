@@ -2,7 +2,7 @@
   <div class="widgets">
     <div class="widget-image">
       <a target="_blank" href="https://github.com/cathei">
-        <img class="widget-gh" src="https://github-readme-stats.vercel.app/api?username=cathei&theme=vue-dark&hide=contribs&hide_rank=true&show_icons=true"/>
+        <img class="widget-gh" src="https://github-stats-extended.vercel.app/api?username=cathei&theme=vue-dark&hide=contribs&hide_rank=true&show_icons=true"/>
       </a>
     </div>
     <div class="widget-text">
